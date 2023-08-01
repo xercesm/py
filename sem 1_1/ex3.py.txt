@@ -1,0 +1,15 @@
+from decimal import Decimal
+
+num = input("Введите целое или вещественное число: ")
+if '.' in num:
+    num = Decimal(num)
+else:
+    num = int(num)
+
+sum_digits = 0
+while num > 0:
+    digit = num % 10
+    sum_digits += digit
+    num //= 10
+
+print("Сумма цифр числа:", sum_digits)
