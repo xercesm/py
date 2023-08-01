@@ -1,0 +1,17 @@
+from fractions import Fraction
+
+# Ввод дробей
+fraction_1 = input("Введите первую дробь в формате a/b: ")
+fraction_2 = input("Введите вторую дробь в формате a/b: ")
+
+# Преобразование строк в объекты Fraction
+frac_1 = Fraction(fraction_1)
+frac_2 = Fraction(fraction_2)
+
+# Вычисление суммы и произведения дробей
+sum_frac = frac_1 + frac_2
+prod_frac = frac_1 * frac_2
+
+# Вывод результатов
+print("Сумма дробей:", sum_frac)
+print("Произведение дробей:", prod_frac)

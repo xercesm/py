@@ -1,0 +1,13 @@
+from decimal import Decimal, getcontext
+
+getcontext().prec = 42
+
+diameter = Decimal(input("Введите диаметр круга: "))
+radius = diameter / 2
+pi = Decimal('3.14159265358979323846264338327950288419716939937510')
+
+area = pi * radius ** 2
+circumference = pi * diameter
+
+print("Площадь круга:", area)
+print("Длина окружности:", circumference)
