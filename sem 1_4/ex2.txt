@@ -1,0 +1,9 @@
+def create_dict(**kwargs):
+    result_dict = {}
+    for key, value in kwargs.items():
+        try:
+            hash(key)
+            result_dict[hash(key)] = key
+        except TypeError:
+            result_dict[str(key)] = key
+    return result_dict
